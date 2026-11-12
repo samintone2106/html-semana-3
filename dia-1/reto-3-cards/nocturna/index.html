@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rueda Nocturna · Rueda Libre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-['Sora',sans-serif]">
+  <main>
+    <!-- Sección principal -->
+    <section class="mx-auto max-w-3xl px-4 py-20 sm:px-8 sm:py-28">
+      <div class="space-y-6">
+        <p class="inline-block rounded-lg bg-amber-400/10 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-amber-300">
+          Nuevo · Jueves a sábado
+        </p>
+
+        <h1 class="text-5xl font-extrabold leading-tight tracking-tight text-white sm:text-7xl">
+          Rueda Nocturna
+        </h1>
+
+        <p class="max-w-xl text-lg leading-relaxed text-slate-300 sm:text-xl">
+          Descubre Medellín en bici cuando se encienden las luces
+        </p>
+
+        <ul class="flex flex-wrap gap-4 pt-2">
+          <li class="w-40 rounded-2xl bg-slate-900 p-4">
+            <span class="block text-2xl font-bold text-amber-300">3 rutas</span>
+            <span class="block text-xs uppercase tracking-wider text-slate-400">por la ciudad</span>
+          </li>
+          <li class="w-40 rounded-2xl bg-slate-900 p-4">
+            <span class="block text-2xl font-bold text-amber-300">Desde $55.000</span>
+            <span class="block text-xs uppercase tracking-wider text-slate-400">por persona</span>
+          </li>
+        </ul>
+
+        <div class="flex flex-wrap gap-4 pt-2">
+          <!-- Botón principal -->
+          <a href="#rutas"
+             class="inline-block rounded-lg border-2 border-amber-400 bg-amber-400 px-6 py-3 text-base font-semibold text-slate-950 shadow-lg shadow-amber-400/20 transition-colors hover:border-amber-300 hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-amber-300/60 focus:ring-offset-2 focus:ring-offset-slate-950">
+            Inscríbete
+          </a>
+          <!-- Botón secundario -->
+          <a href="#rutas"
+             class="inline-block rounded-lg border-2 border-slate-800 bg-slate-800 px-6 py-3 text-base font-semibold text-slate-100 transition-colors hover:border-slate-700 hover:bg-slate-700 focus:outline-none focus:ring-4 focus:ring-slate-400/60 focus:ring-offset-2 focus:ring-offset-slate-950">
+            Ver rutas
+          </a>
+          <!-- Botón de contorno -->
+          <a href="#incluye"
+             class="inline-block rounded-lg border-2 border-amber-400 bg-transparent px-6 py-3 text-base font-semibold text-amber-300 transition-colors hover:bg-amber-400/10 focus:outline-none focus:ring-4 focus:ring-amber-300/60 focus:ring-offset-2 focus:ring-offset-slate-950">
+            ¿Qué incluye?
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rutas -->
+    <section id="rutas" class="mx-auto max-w-3xl px-4 pb-24 sm:px-8">
+      <div class="space-y-2 pb-8">
+        <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Rutas</h2>
+        <p id="incluye" class="max-w-xl leading-relaxed text-slate-300">Todas salen de la sede de Rueda Libre e incluyen bicicleta, casco, luces LED, chaleco reflectivo y guía.</p>
+      </div>
+      <div class="max-w-md space-y-8">
+        <article class="overflow-hidden rounded-2xl border-2 border-slate-800 bg-slate-900 shadow-md transition-[border-color,box-shadow] hover:border-amber-400 hover:shadow-xl hover:shadow-amber-400/10">
+          <img src="https://picsum.photos/seed/luces-centro/800/400" alt="Foto ilustrativa de la ruta Luces del Centro" class="h-48 w-full object-cover" width="800" height="400" loading="lazy">
+          <div class="space-y-6 p-6">
+            <div class="space-y-2">
+              <span class="inline-block rounded-lg px-3 py-1 text-xs font-semibold uppercase tracking-wider bg-emerald-400/15 text-emerald-300">Nivel: Fácil</span>
+              <h3 class="text-2xl font-bold leading-tight text-white">Luces del Centro</h3>
+            </div>
+            <dl class="grid grid-cols-2 gap-4">
+              <div>
+                <dt class="text-xs uppercase tracking-wider text-slate-400">Distancia</dt>
+                <dd class="text-lg font-semibold text-white">10 km</dd>
+              </div>
+              <div>
+                <dt class="text-xs uppercase tracking-wider text-slate-400">Duración</dt>
+                <dd class="text-lg font-semibold text-white">2 h</dd>
+              </div>
+              <div class="col-span-2">
+                <dt class="text-xs uppercase tracking-wider text-slate-400">Punto de encuentro</dt>
+                <dd class="text-lg font-semibold text-white">Sede Rueda Libre</dd>
+              </div>
+            </dl>
+            <p class="text-sm leading-relaxed text-slate-400">Incluye bicicleta, casco, luces LED, chaleco reflectivo y guía.</p>
+            <div class="flex flex-wrap items-end justify-between gap-4">
+              <p>
+                <span class="block text-xs uppercase tracking-wider text-slate-400">Precio por persona</span>
+                <span class="block text-3xl font-extrabold text-amber-300">$55.000</span>
+              </p>
+              <a href="#rutas" class="inline-block rounded-lg border-2 border-amber-400 bg-amber-400 px-6 py-3 text-base font-semibold text-slate-950 shadow-lg shadow-amber-400/20 transition-colors hover:border-amber-300 hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-amber-300/60 focus:ring-offset-2 focus:ring-offset-slate-950">
+                Inscríbete<span class="sr-only"> a Luces del Centro</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="overflow-hidden rounded-2xl border-2 border-slate-800 bg-slate-900 shadow-md transition-[border-color,box-shadow] hover:border-amber-400 hover:shadow-xl hover:shadow-amber-400/10">
+          <img src="https://picsum.photos/seed/miradores-ciudad/800/400" alt="Foto ilustrativa de la ruta Miradores de la Ciudad" class="h-48 w-full object-cover" width="800" height="400" loading="lazy">
+          <div class="space-y-6 p-6">
+            <div class="space-y-2">
+              <span class="inline-block rounded-lg px-3 py-1 text-xs font-semibold uppercase tracking-wider bg-amber-400/15 text-amber-300">Nivel: Medio</span>
+              <h3 class="text-2xl font-bold leading-tight text-white">Miradores de la Ciudad</h3>
+            </div>
+            <dl class="grid grid-cols-2 gap-4">
+              <div>
+                <dt class="text-xs uppercase tracking-wider text-slate-400">Distancia</dt>
+                <dd class="text-lg font-semibold text-white">16 km</dd>
+              </div>
+              <div>
+                <dt class="text-xs uppercase tracking-wider text-slate-400">Duración</dt>
+                <dd class="text-lg font-semibold text-white">3 h</dd>
+              </div>
+              <div class="col-span-2">
+                <dt class="text-xs uppercase tracking-wider text-slate-400">Punto de encuentro</dt>
+                <dd class="text-lg font-semibold text-white">Sede Rueda Libre</dd>
+              </div>
+            </dl>
+            <p class="text-sm leading-relaxed text-slate-400">Incluye bicicleta, casco, luces LED, chaleco reflectivo y guía.</p>
+            <div class="flex flex-wrap items-end justify-between gap-4">
+              <p>
+                <span class="block text-xs uppercase tracking-wider text-slate-400">Precio por persona</span>
+                <span class="block text-3xl font-extrabold text-amber-300">$75.000</span>
+              </p>
+              <a href="#rutas" class="inline-block rounded-lg border-2 border-amber-400 bg-amber-400 px-6 py-3 text-base font-semibold text-slate-950 shadow-lg shadow-amber-400/20 transition-colors hover:border-amber-300 hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-amber-300/60 focus:ring-offset-2 focus:ring-offset-slate-950">
+                Inscríbete<span class="sr-only"> a Miradores de la Ciudad</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="overflow-hidden rounded-2xl border-2 border-slate-800 bg-slate-900 shadow-md transition-[border-color,box-shadow] hover:border-amber-400 hover:shadow-xl hover:shadow-amber-400/10">
+          <img src="https://picsum.photos/seed/luna-palmas/800/400" alt="Foto ilustrativa de la ruta Luna en Las Palmas" class="h-48 w-full object-cover" width="800" height="400" loading="lazy">
+          <div class="space-y-6 p-6">
+            <div class="space-y-2">
+              <span class="inline-block rounded-lg px-3 py-1 text-xs font-semibold uppercase tracking-wider bg-rose-400/15 text-rose-300">Nivel: Difícil</span>
+              <h3 class="text-2xl font-bold leading-tight text-white">Luna en Las Palmas</h3>
+            </div>
+            <dl class="grid grid-cols-2 gap-4">
+              <div>
+                <dt class="text-xs uppercase tracking-wider text-slate-400">Distancia</dt>
+                <dd class="text-lg font-semibold text-white">22 km</dd>
+              </div>
+              <div>
+                <dt class="text-xs uppercase tracking-wider text-slate-400">Duración</dt>
+                <dd class="text-lg font-semibold text-white">3,5 h</dd>
+              </div>
+              <div class="col-span-2">
+                <dt class="text-xs uppercase tracking-wider text-slate-400">Punto de encuentro</dt>
+                <dd class="text-lg font-semibold text-white">Sede Rueda Libre</dd>
+              </div>
+            </dl>
+            <p class="text-sm leading-relaxed text-slate-400">Incluye bicicleta, casco, luces LED, chaleco reflectivo y guía.</p>
+            <div class="flex flex-wrap items-end justify-between gap-4">
+              <p>
+                <span class="block text-xs uppercase tracking-wider text-slate-400">Precio por persona</span>
+                <span class="block text-3xl font-extrabold text-amber-300">$95.000</span>
+              </p>
+              <a href="#rutas" class="inline-block rounded-lg border-2 border-amber-400 bg-amber-400 px-6 py-3 text-base font-semibold text-slate-950 shadow-lg shadow-amber-400/20 transition-colors hover:border-amber-300 hover:bg-amber-300 focus:outline-none focus:ring-4 focus:ring-amber-300/60 focus:ring-offset-2 focus:ring-offset-slate-950">
+                Inscríbete<span class="sr-only"> a Luna en Las Palmas</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
