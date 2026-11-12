@@ -1,0 +1,65 @@
+/* Rueda Libre v2.0 — marca sobre las variables de Bootstrap 5.3
+   Mismos valores que el @theme de nocturna/src/input.css */
+:root {
+  --bs-verde-ruta: #1B6B3A;
+  --bs-gris-asfalto: #2B3035;
+  --bs-amarillo-senal: #F2B705;
+  --bs-gris-niebla: #E4E8E3;
+  --bs-fondo: #FAFAF7;
+  --bs-amarillo-farol: #FFD166;
+
+  --bs-primary: #1B6B3A;
+  --bs-primary-rgb: 27, 107, 58;
+  --bs-warning: #F2B705;
+  --bs-warning-rgb: 242, 183, 5;
+  --bs-dark: #2B3035;
+  --bs-dark-rgb: 43, 48, 53;
+  --bs-light: #E4E8E3;
+  --bs-light-rgb: 228, 232, 227;
+
+  --bs-body-bg: #FAFAF7;
+  --bs-body-color: #2B3035;
+  --bs-body-font-family: "Open Sans", Helvetica, sans-serif;
+  --bs-link-color: #1B6B3A;
+  --bs-link-color-rgb: 27, 107, 58;
+  --bs-link-hover-color: #2B3035;
+  --bs-link-hover-color-rgb: 43, 48, 53;
+  --bs-border-radius: 0.5rem;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+}
+
+.btn-primary {
+  --bs-btn-bg: #1B6B3A;
+  --bs-btn-border-color: #1B6B3A;
+  --bs-btn-hover-bg: #2B3035;
+  --bs-btn-hover-border-color: #2B3035;
+  --bs-btn-active-bg: #2B3035;
+  --bs-btn-active-border-color: #2B3035;
+  --bs-btn-focus-shadow-rgb: 27, 107, 58;
+}
+
+.btn-warning {
+  --bs-btn-color: #2B3035;
+  --bs-btn-bg: #F2B705;
+  --bs-btn-border-color: #F2B705;
+  --bs-btn-hover-color: #2B3035;
+  --bs-btn-hover-bg: #FFD166;
+  --bs-btn-hover-border-color: #FFD166;
+  --bs-btn-active-color: #2B3035;
+  --bs-btn-active-bg: #FFD166;
+  --bs-btn-active-border-color: #FFD166;
+}
+
+.carousel-item img {
+  height: 420px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  background-color: rgba(43, 48, 53, 0.85);
+  border-radius: var(--bs-border-radius);
+}
