@@ -25,7 +25,7 @@ npm install -D tailwindcss @tailwindcss/cli
 npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
 ```
 - `src/input.css` solo tiene `@import "tailwindcss";`.
-- `.gitignore` deja fuera `node_modules/`. `output.css` sí se sube, porque GitHub Pages no corre la CLI.
+- `node_modules/` no se sube. `output.css` sí se sube, porque GitHub Pages no corre la CLI.
 
 **Clase usada vs. no usada:**
 - `bg-amber-400` (la uso): **sí** aparece en `output.css`.

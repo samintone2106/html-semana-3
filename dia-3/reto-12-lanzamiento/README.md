@@ -33,8 +33,8 @@ Rueda Libre alquila bicicletas en Medellín. Este proyecto junta dos productos e
 ## Cómo correrlo
 
 ```bash
-npm install                      # en la raíz del repo (instala Tailwind una vez)
 cd dia-3/reto-12-lanzamiento/nocturna
+npm install                      # instala Tailwind (node_modules no se sube)
 npm run dev                      # observa cambios
 npm run build                    # genera src/output.css minificado
 ```
