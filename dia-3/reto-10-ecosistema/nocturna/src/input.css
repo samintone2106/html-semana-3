@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* Marca Rueda Libre (mismos valores del sitio) + color de campaña */
+@theme {
+  --color-verde-ruta: #1B6B3A;
+  --color-gris-asfalto: #2B3035;
+  --color-amarillo-senal: #F2B705;
+  --color-gris-niebla: #E4E8E3;
+  --color-fondo: #FAFAF7;
+  --color-amarillo-farol: #FFD166;
+
+  --font-titulos: "Montserrat", Arial, sans-serif;
+  --font-texto: "Open Sans", Helvetica, sans-serif;
+}
+
+/* Máximo tres clases propias: los botones del kit, que se repiten en toda la landing */
+@layer components {
+  .btn-primario {
+    @apply inline-block rounded-lg border-2 px-6 py-3 text-base font-semibold
+      border-amarillo-senal bg-amarillo-senal text-gris-asfalto shadow-lg shadow-amarillo-senal/20
+      transition-colors hover:border-amarillo-farol hover:bg-amarillo-farol
+      focus:outline-none focus:ring-4 focus:ring-verde-ruta/40 focus:ring-offset-2 focus:ring-offset-fondo
+      dark:focus:ring-amarillo-farol/60 dark:focus:ring-offset-gris-asfalto;
+  }
+  .btn-secundario {
+    @apply inline-block rounded-lg border-2 px-6 py-3 text-base font-semibold
+      border-verde-ruta bg-verde-ruta text-white
+      transition-colors hover:border-gris-asfalto hover:bg-gris-asfalto
+      focus:outline-none focus:ring-4 focus:ring-verde-ruta/40 focus:ring-offset-2 focus:ring-offset-fondo
+      dark:hover:border-black dark:hover:bg-black dark:focus:ring-amarillo-farol/60 dark:focus:ring-offset-gris-asfalto;
+  }
+  .btn-contorno {
+    @apply inline-block rounded-lg border-2 px-6 py-3 text-base font-semibold
+      border-verde-ruta bg-transparent text-verde-ruta
+      transition-colors hover:bg-verde-ruta/10
+      focus:outline-none focus:ring-4 focus:ring-verde-ruta/40 focus:ring-offset-2 focus:ring-offset-fondo
+      dark:border-amarillo-farol dark:text-amarillo-farol dark:hover:bg-amarillo-farol/10
+      dark:focus:ring-amarillo-farol/60 dark:focus:ring-offset-gris-asfalto;
+  }
+}
