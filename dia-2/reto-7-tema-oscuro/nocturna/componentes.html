@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kit de componentes · Rueda Nocturna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-fondo font-texto text-gris-asfalto dark:bg-gris-asfalto dark:text-gris-niebla">
+  <main class="mx-auto max-w-3xl space-y-12 px-4 py-16 md:px-8">
+    <header class="space-y-4">
+      <p class="inline-block rounded-lg bg-verde-ruta/10 px-4 py-1 text-xs font-semibold uppercase tracking-widest text-verde-ruta dark:bg-amarillo-farol/10 dark:text-amarillo-farol">Kit v0.2 · marca</p>
+      <h1 class="font-titulos text-4xl font-bold leading-tight tracking-tight text-gris-asfalto sm:text-5xl dark:text-white">Componentes Rueda Nocturna</h1>
+      <p class="max-w-xl leading-relaxed text-gris-asfalto/80 dark:text-gris-niebla">Botones, card, alertas y campos con los colores y fuentes de Rueda Libre, en modo claro y oscuro. <a href="index.html" class="rounded-lg font-semibold text-verde-ruta underline underline-offset-4 focus:outline-none focus:ring-4 focus:ring-verde-ruta/40 focus:ring-offset-2 focus:ring-offset-fondo dark:text-amarillo-farol dark:focus:ring-amarillo-farol/60 dark:focus:ring-offset-gris-asfalto">Ver landing</a></p>
+    </header>
+
+    <section aria-labelledby="t-botones" class="space-y-6 border-t-2 border-gris-niebla pt-8 dark:border-black">
+      <div class="space-y-2">
+        <h2 id="t-botones" class="font-titulos text-2xl font-bold tracking-tight text-gris-asfalto dark:text-white">Botones</h2>
+        <p class="text-sm leading-relaxed text-gris-asfalto/70 dark:text-gris-niebla/70">Principal, secundario y contorno. Hover cambia el fondo; el foco con Tab muestra un anillo.</p>
+      </div>
+      <div class="flex flex-wrap gap-4">
+        <a href="#"
+           class="inline-block rounded-lg border-2 border-amarillo-senal bg-amarillo-senal px-6 py-3 text-base font-semibold text-gris-asfalto shadow-lg shadow-amarillo-senal/20 transition-colors hover:border-amarillo-farol hover:bg-amarillo-farol focus:outline-none focus:ring-4 focus:ring-verde-ruta/40 focus:ring-offset-2 focus:ring-offset-fondo dark:focus:ring-amarillo-farol/60 dark:focus:ring-offset-gris-asfalto">
+          Inscríbete
+        </a>
+        <a href="#"
+           class="inline-block rounded-lg border-2 border-verde-ruta bg-verde-ruta px-6 py-3 text-base font-semibold text-white transition-colors hover:border-gris-asfalto hover:bg-gris-asfalto focus:outline-none focus:ring-4 focus:ring-verde-ruta/40 focus:ring-offset-2 focus:ring-offset-fondo dark:hover:border-black dark:hover:bg-black dark:focus:ring-amarillo-farol/60 dark:focus:ring-offset-gris-asfalto">
+          Ver rutas
+        </a>
+        <a href="#"
+           class="inline-block rounded-lg border-2 border-verde-ruta bg-transparent px-6 py-3 text-base font-semibold text-verde-ruta transition-colors hover:bg-verde-ruta/10 focus:outline-none focus:ring-4 focus:ring-verde-ruta/40 focus:ring-offset-2 focus:ring-offset-fondo dark:border-amarillo-farol dark:text-amarillo-farol dark:hover:bg-amarillo-farol/10 dark:focus:ring-amarillo-farol/60 dark:focus:ring-offset-gris-asfalto">
+          ¿Qué incluye?
+        </a>
+      </div>
+    </section>
+
+    <section aria-labelledby="t-card" class="space-y-6 border-t-2 border-gris-niebla pt-8 dark:border-black">
+      <div class="space-y-2">
+        <h2 id="t-card" class="font-titulos text-2xl font-bold tracking-tight text-gris-asfalto dark:text-white">Card de ruta</h2>
+        <p class="text-sm leading-relaxed text-gris-asfalto/70 dark:text-gris-niebla/70">Misma estructura para las tres rutas; solo cambian los datos y el color de la etiqueta.</p>
+      </div>
+      <div class="max-w-md">
+        <article class="overflow-hidden rounded-2xl border-2 border-gris-niebla bg-white shadow-md transition-[border-color,box-shadow] hover:border-verde-ruta hover:shadow-xl hover:shadow-verde-ruta/10 dark:border-black dark:bg-black dark:hover:border-amarillo-farol dark:hover:shadow-amarillo-farol/10">
+          <img src="../img/ruta-rio-parques.svg" alt="Ilustración de la ruta Luces del Centro" class="h-48 w-full object-cover" width="600" height="400" loading="lazy">
+          <div class="space-y-6 p-6">
+            <div class="space-y-2">
+              <span class="inline-block rounded-lg px-3 py-1 text-xs font-semibold uppercase tracking-wider bg-verde-ruta text-white">Nivel: Fácil</span>
+              <h3 class="font-titulos text-2xl font-bold leading-tight text-gris-asfalto dark:text-white">Luces del Centro</h3>
+            </div>
+            <dl class="grid grid-cols-2 gap-4">
+              <div>
+                <dt class="text-xs uppercase tracking-wider text-gris-asfalto/70 dark:text-gris-niebla/70">Distancia</dt>
+                <dd class="text-lg font-semibold text-gris-asfalto dark:text-white">10 km</dd>
+              </div>
+              <div>
+                <dt class="text-xs uppercase tracking-wider text-gris-asfalto/70 dark:text-gris-niebla/70">Duración</dt>
+                <dd class="text-lg font-semibold text-gris-asfalto dark:text-white">2 h</dd>
+              </div>
+              <div class="col-span-2">
+                <dt class="text-xs uppercase tracking-wider text-gris-asfalto/70 dark:text-gris-niebla/70">Punto de encuentro</dt>
+                <dd class="text-lg font-semibold text-gris-asfalto dark:text-white">Sede Rueda Libre</dd>
+              </div>
+            </dl>
+            <p class="text-sm leading-relaxed text-gris-asfalto/70 dark:text-gris-niebla/70">Incluye bicicleta, casco, luces LED, chaleco reflectivo y guía.</p>
+            <div class="flex flex-wrap items-end justify-between gap-4">
+              <p>
+                <span class="block text-xs uppercase tracking-wider text-gris-asfalto/70 dark:text-gris-niebla/70">Precio por persona</span>
+                <span class="block font-titulos text-3xl font-bold text-verde-ruta dark:text-amarillo-farol">$55.000</span>
+              </p>
+              <a href="#" class="inline-block rounded-lg border-2 border-amarillo-senal bg-amarillo-senal px-6 py-3 text-base font-semibold text-gris-asfalto shadow-lg shadow-amarillo-senal/20 transition-colors hover:border-amarillo-farol hover:bg-amarillo-farol focus:outline-none focus:ring-4 focus:ring-verde-ruta/40 focus:ring-offset-2 focus:ring-offset-fondo dark:focus:ring-amarillo-farol/60 dark:focus:ring-offset-gris-asfalto">
+                Inscríbete<span class="sr-only"> a Luces del Centro</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="text-sm leading-relaxed text-gris-asfalto/70 dark:text-gris-niebla/70">Etiquetas de nivel:
+        <span class="inline-block rounded-lg px-3 py-1 text-xs font-semibold uppercase tracking-wider bg-verde-ruta text-white">Nivel: Fácil</span>
+        <span class="inline-block rounded-lg px-3 py-1 text-xs font-semibold uppercase tracking-wider bg-amarillo-senal text-gris-asfalto">Nivel: Medio</span>
+        <span class="inline-block rounded-lg px-3 py-1 text-xs font-semibold uppercase tracking-wider bg-gris-asfalto text-white dark:bg-gris-niebla dark:text-gris-asfalto">Nivel: Difícil</span>
+      </p>
+    </section>
+
+    <section aria-labelledby="t-alertas" class="space-y-6 border-t-2 border-gris-niebla pt-8 dark:border-black">
+      <div class="space-y-2">
+        <h2 id="t-alertas" class="font-titulos text-2xl font-bold tracking-tight text-gris-asfalto dark:text-white">Alertas</h2>
+        <p class="text-sm leading-relaxed text-gris-asfalto/70 dark:text-gris-niebla/70">Fondo suave, borde lateral de color, título destacado y texto.</p>
+      </div>
+      <div class="space-y-4">
+        <div class="rounded-2xl border-l-4 border-gris-asfalto bg-gris-niebla p-6 dark:border-gris-niebla dark:bg-black">
+          <p class="font-titulos text-base font-bold text-gris-asfalto dark:text-white">Información</p>
+          <p class="pt-1 text-sm leading-relaxed text-gris-asfalto dark:text-gris-niebla">Las rutas salen a las 7:00 p. m. desde la sede de Rueda Libre. Llega 20 minutos antes.</p>
+        </div>
+        <div role="alert" class="rounded-2xl border-l-4 border-verde-ruta bg-verde-ruta/10 p-6 dark:bg-black">
+          <p class="font-titulos text-base font-bold text-verde-ruta dark:text-white">¡Inscripción confirmada!</p>
+          <p class="pt-1 text-sm leading-relaxed text-gris-asfalto dark:text-gris-niebla">Te enviamos los detalles de tu ruta al correo registrado.</p>
+        </div>
+        <div class="rounded-2xl border-l-4 border-amarillo-senal bg-amarillo-farol/20 p-6 dark:border-amarillo-farol dark:bg-black">
+          <p class="font-titulos text-base font-bold text-gris-asfalto dark:text-amarillo-farol">Advertencia</p>
+          <p class="pt-1 text-sm leading-relaxed text-gris-asfalto dark:text-gris-niebla">La ruta Luna en Las Palmas es de nivel difícil: se recomienda experiencia previa en subidas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="t-campos" class="space-y-6 border-t-2 border-gris-niebla pt-8 dark:border-black">
+      <div class="space-y-2">
+        <h2 id="t-campos" class="font-titulos text-2xl font-bold tracking-tight text-gris-asfalto dark:text-white">Campos de formulario</h2>
+        <p class="text-sm leading-relaxed text-gris-asfalto/70 dark:text-gris-niebla/70">Etiqueta visible asociada con for/id, texto de ayuda y foco visible.</p>
+      </div>
+      <form class="max-w-md space-y-6" action="#" method="get">
+        <div class="space-y-2">
+          <label for="correo" class="block text-sm font-semibold text-gris-asfalto dark:text-gris-niebla">Correo electrónico</label>
+          <input id="correo" name="correo" type="email" placeholder="nombre@correo.com" aria-describedby="correo-ayuda" autocomplete="email"
+                 class="w-full rounded-lg border-2 border-gris-asfalto/50 bg-white px-4 py-3 text-base text-gris-asfalto placeholder:text-gris-asfalto/70 transition-colors hover:border-gris-asfalto focus:border-verde-ruta focus:outline-none focus:ring-4 focus:ring-verde-ruta/30 focus:ring-offset-2 focus:ring-offset-fondo dark:border-gris-niebla/50 dark:bg-black dark:text-white dark:placeholder:text-gris-niebla/70 dark:hover:border-gris-niebla dark:focus:border-amarillo-farol dark:focus:ring-amarillo-farol/40 dark:focus:ring-offset-gris-asfalto">
+          <p id="correo-ayuda" class="text-xs leading-relaxed text-gris-asfalto/70 dark:text-gris-niebla/70">Te enviaremos la confirmación de la inscripción.</p>
+        </div>
+        <div class="space-y-2">
+          <label for="celular" class="block text-sm font-semibold text-gris-asfalto dark:text-gris-niebla">Celular</label>
+          <input id="celular" name="celular" type="tel" placeholder="300 123 4567" aria-describedby="celular-ayuda" autocomplete="tel" inputmode="tel"
+                 class="w-full rounded-lg border-2 border-gris-asfalto/50 bg-white px-4 py-3 text-base text-gris-asfalto placeholder:text-gris-asfalto/70 transition-colors hover:border-gris-asfalto focus:border-verde-ruta focus:outline-none focus:ring-4 focus:ring-verde-ruta/30 focus:ring-offset-2 focus:ring-offset-fondo dark:border-gris-niebla/50 dark:bg-black dark:text-white dark:placeholder:text-gris-niebla/70 dark:hover:border-gris-niebla dark:focus:border-amarillo-farol dark:focus:ring-amarillo-farol/40 dark:focus:ring-offset-gris-asfalto">
+          <p id="celular-ayuda" class="text-xs leading-relaxed text-gris-asfalto/70 dark:text-gris-niebla/70">10 dígitos, sin indicativo. Solo para avisos el día de la ruta.</p>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

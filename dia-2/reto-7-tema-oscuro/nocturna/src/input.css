@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+/* Marca Rueda Libre (mismos valores del sitio) + color de campaña */
+@theme {
+  --color-verde-ruta: #1B6B3A;
+  --color-gris-asfalto: #2B3035;
+  --color-amarillo-senal: #F2B705;
+  --color-gris-niebla: #E4E8E3;
+  --color-fondo: #FAFAF7;
+  --color-amarillo-farol: #FFD166;
+
+  --font-titulos: "Montserrat", Arial, sans-serif;
+  --font-texto: "Open Sans", Helvetica, sans-serif;
+}
